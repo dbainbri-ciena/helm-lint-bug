@@ -1,0 +1,5 @@
+general:
+  value: ~
+
+specific:
+  value: '{{ .Values.general.value | default .Chart.AppVersion  }}'
